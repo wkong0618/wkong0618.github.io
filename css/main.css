@@ -158,7 +158,7 @@ body {
   background: #f5f7f9;
   color: #555;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 2;
 }
 @media (max-width: 991px) {
@@ -179,22 +179,22 @@ h6 {
   margin: 20px 0 15px;
 }
 h1 {
-  font-size: 1.5em;
+  font-size: 1.175em;
 }
 h2 {
-  font-size: 1.375em;
+  font-size: 1.05em;
 }
 h3 {
-  font-size: 1.25em;
+  font-size: 0.925em;
 }
 h4 {
-  font-size: 1.125em;
+  font-size: 0.8em;
 }
 h5 {
-  font-size: 1em;
+  font-size: 0.675em;
 }
 h6 {
-  font-size: 0.875em;
+  font-size: 0.55em;
 }
 p {
   margin: 0 0 20px 0;
@@ -360,6 +360,38 @@ td {
 .toggle.toggle-close .toggle-line-last {
   top: -5px;
   transform: rotate(45deg);
+}
+.highlight-container {
+  position: relative;
+}
+.highlight-container:hover .copy-btn,
+.highlight-container .copy-btn:focus {
+  opacity: 1;
+}
+.copy-btn {
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.6;
+  opacity: 0;
+  outline: 0;
+  padding: 2px 6px;
+  position: absolute;
+  transition: opacity 0.3s ease-in-out;
+  vertical-align: middle;
+  white-space: nowrap;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 0.8125em;
+  right: 4px;
+  top: 8px;
 }
 .highlight,
 pre {
@@ -961,7 +993,7 @@ pre .javascript .function {
   border-bottom: none;
   color: #fff;
   display: inline-block;
-  line-height: 1.375em;
+  line-height: 1.5em;
   padding: 0 40px;
   position: relative;
 }
@@ -971,7 +1003,7 @@ pre .javascript .function {
 .site-title {
   display: inline-block;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 1.375em;
+  font-size: 1.5em;
   font-weight: normal;
   line-height: 1.5;
   vertical-align: top;
@@ -1156,7 +1188,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff112d;
+  background: #ff5458;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1957,6 +1989,13 @@ pre .javascript .function {
 }
 #qr p {
   text-align: center;
+}
+.post-copyright {
+  background: #f5f5f5;
+  border-left: 3px solid #ff2a2a;
+  list-style: none;
+  margin: 2em 0 0;
+  padding: 0.5em 1em;
 }
 .category-all-page .category-all-title {
   text-align: center;
