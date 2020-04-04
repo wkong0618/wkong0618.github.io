@@ -229,7 +229,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-04-04 21:43:18 / 修改时间：21:57:59" itemprop="dateCreated datePublished" datetime="2020-04-04T21:43:18+08:00">2020-04-04</time>
+              <time title="创建时间：2020-04-04 21:43:18 / 修改时间：23:24:46" itemprop="dateCreated datePublished" datetime="2020-04-04T21:43:18+08:00">2020-04-04</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -282,15 +282,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><a href="http://jmeter.apache.org/download_jmeter.cgi" target="_blank" rel="noopener">http://jmeter.apache.org/download_jmeter.cgi</a><br>上面链接是Jmeter下载页面,看到最新版支持是从java8开始，当前系统安装了java8，我们不直接下载进行安装,我们可以使用mac的软件包安装工具Homebrew(<a href="https://brew.sh/index_zh-cn)进行安装。" target="_blank" rel="noopener">https://brew.sh/index_zh-cn)进行安装。</a></p>
-<h3 id="在【终端】输入brew-search-jmeter可以搜索当前是否已经安装jmeter"><a href="#在【终端】输入brew-search-jmeter可以搜索当前是否已经安装jmeter" class="headerlink" title="在【终端】输入brew search jmeter可以搜索当前是否已经安装jmeter"></a>在【终端】输入brew search jmeter可以搜索当前是否已经安装jmeter</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/35d27a24707ef1235f5a/640.png" alt="avatar"></p>
-<h3 id="在【终端】输入brew-info-jmeter-可查看具体的包信息，当前是否已安装等"><a href="#在【终端】输入brew-info-jmeter-可查看具体的包信息，当前是否已安装等" class="headerlink" title="在【终端】输入brew info jmeter 可查看具体的包信息，当前是否已安装等"></a>在【终端】输入brew info jmeter 可查看具体的包信息，当前是否已安装等</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/8c79e21b8e38a6cfcd97/640.jpeg" alt="avatar"></p>
-<h3 id="在【终端】输入brew-install-jmeter-回车进行安装，耗时会比较长一些-当前已经下载过"><a href="#在【终端】输入brew-install-jmeter-回车进行安装，耗时会比较长一些-当前已经下载过" class="headerlink" title="在【终端】输入brew install  jmeter 回车进行安装，耗时会比较长一些(当前已经下载过)"></a>在【终端】输入brew install  jmeter 回车进行安装，耗时会比较长一些(当前已经下载过)</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/1a60167f5d85609e8bc8/640-1.jpeg" alt="avatar"></p>
-<h3 id="此时已经安装完成，【终端】输入brew-search-jmeter，我们会看到已经安装完毕"><a href="#此时已经安装完成，【终端】输入brew-search-jmeter，我们会看到已经安装完毕" class="headerlink" title="此时已经安装完成，【终端】输入brew search jmeter，我们会看到已经安装完毕"></a>此时已经安装完成，【终端】输入brew search jmeter，我们会看到已经安装完毕</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/7fcffcad93eb8bd50bd8/640.png" alt="avatar"></p>
-<h3 id="安装完成后【终端】输入jmeter即可启动jmeter"><a href="#安装完成后【终端】输入jmeter即可启动jmeter" class="headerlink" title="安装完成后【终端】输入jmeter即可启动jmeter"></a>安装完成后【终端】输入jmeter即可启动jmeter</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/e1d9756775cc36c659b7/640-2.jpeg" alt="avatar"><br><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/5374749dd3bdd2564732/640-3.jpeg" alt="avatar"></p>
-<h3 id="默认英文的，如果想转换为中文-可选择Options-gt-Choose-Language-gt-Chiness-Simplified"><a href="#默认英文的，如果想转换为中文-可选择Options-gt-Choose-Language-gt-Chiness-Simplified" class="headerlink" title="默认英文的，如果想转换为中文: 可选择Options-&gt;Choose Language-&gt;Chiness(Simplified)"></a>默认英文的，如果想转换为中文: 可选择Options-&gt;Choose Language-&gt;Chiness(Simplified)</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/6a422ff4367fb8efaaff/640-4.jpeg" alt="avatar"></p>
-<h2 id="安装中可能遇到的错误"><a href="#安装中可能遇到的错误" class="headerlink" title="安装中可能遇到的错误"></a>安装中可能遇到的错误</h2><p>在执行jmeter启动的时候，可能会遇到下面截图中的错误:<br><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/242cc6b171abf81c1699/640-5.jpeg" alt="avatar"> 我们可以看到最后一行出现了一个null的错误，此时我们就需要查看下启动的日志，确定问题的原因，在当前启动目录下有jmeter.log日志，我们在【终端】输入cat jmeter.log查看日志内容：<br><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/ad7975e42eacb3176211/640-6.jpeg" alt="avatar"> 此时我们只要在【终端】执行：jmeter -Djava.awt.headless=false即可(添加了虚拟机参数:-Djava.awt.headless=false)</p>
-
+          <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><a href="http://jmeter.apache.org/download_jmeter.cgi" target="_blank" rel="noopener">http://jmeter.apache.org/download_jmeter.cgi</a><br>上面链接是Jmeter下载页面,看到最新版支持是从java8开始，当前系统安装了java8，我们不直接下载进行安装,我们可以使用mac的软件包安装工具Homebrew(<a href="https://brew.sh/index_zh-cn)进行安装。" target="_blank" rel="noopener">https://brew.sh/index_zh-cn)进行安装。</a>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/04/04/Mac%E5%AE%89%E8%A3%85Jmeter/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
