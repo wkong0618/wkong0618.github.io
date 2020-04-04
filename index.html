@@ -14,6 +14,8 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-pace-theme-center-atom.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
 
 
 <script id="hexo-configurations">
@@ -202,6 +204,321 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wkong0618.github.io/2020/04/04/Mac%E5%AE%89%E8%A3%85Jmeter/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="wkong">
+      <meta itemprop="description" content="愿你生命中有更多的云翳来造成一个美丽的黄昏">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WKong 博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/04/Mac%E5%AE%89%E8%A3%85Jmeter/" class="post-title-link" itemprop="url">Mac安装Jmeter</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-04-04 21:43:18 / 修改时间：21:57:59" itemprop="dateCreated datePublished" datetime="2020-04-04T21:43:18+08:00">2020-04-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/jmeter/" itemprop="url" rel="index">
+                    <span itemprop="name">jmeter</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/04/04/Mac%E5%AE%89%E8%A3%85Jmeter/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/04/Mac%E5%AE%89%E8%A3%85Jmeter/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>649</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><a href="http://jmeter.apache.org/download_jmeter.cgi" target="_blank" rel="noopener">http://jmeter.apache.org/download_jmeter.cgi</a><br>上面链接是Jmeter下载页面,看到最新版支持是从java8开始，当前系统安装了java8，我们不直接下载进行安装,我们可以使用mac的软件包安装工具Homebrew(<a href="https://brew.sh/index_zh-cn)进行安装。" target="_blank" rel="noopener">https://brew.sh/index_zh-cn)进行安装。</a></p>
+<h3 id="在【终端】输入brew-search-jmeter可以搜索当前是否已经安装jmeter"><a href="#在【终端】输入brew-search-jmeter可以搜索当前是否已经安装jmeter" class="headerlink" title="在【终端】输入brew search jmeter可以搜索当前是否已经安装jmeter"></a>在【终端】输入brew search jmeter可以搜索当前是否已经安装jmeter</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/35d27a24707ef1235f5a/640.png" alt="avatar"></p>
+<h3 id="在【终端】输入brew-info-jmeter-可查看具体的包信息，当前是否已安装等"><a href="#在【终端】输入brew-info-jmeter-可查看具体的包信息，当前是否已安装等" class="headerlink" title="在【终端】输入brew info jmeter 可查看具体的包信息，当前是否已安装等"></a>在【终端】输入brew info jmeter 可查看具体的包信息，当前是否已安装等</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/8c79e21b8e38a6cfcd97/640.jpeg" alt="avatar"></p>
+<h3 id="在【终端】输入brew-install-jmeter-回车进行安装，耗时会比较长一些-当前已经下载过"><a href="#在【终端】输入brew-install-jmeter-回车进行安装，耗时会比较长一些-当前已经下载过" class="headerlink" title="在【终端】输入brew install  jmeter 回车进行安装，耗时会比较长一些(当前已经下载过)"></a>在【终端】输入brew install  jmeter 回车进行安装，耗时会比较长一些(当前已经下载过)</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/1a60167f5d85609e8bc8/640-1.jpeg" alt="avatar"></p>
+<h3 id="此时已经安装完成，【终端】输入brew-search-jmeter，我们会看到已经安装完毕"><a href="#此时已经安装完成，【终端】输入brew-search-jmeter，我们会看到已经安装完毕" class="headerlink" title="此时已经安装完成，【终端】输入brew search jmeter，我们会看到已经安装完毕"></a>此时已经安装完成，【终端】输入brew search jmeter，我们会看到已经安装完毕</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/7fcffcad93eb8bd50bd8/640.png" alt="avatar"></p>
+<h3 id="安装完成后【终端】输入jmeter即可启动jmeter"><a href="#安装完成后【终端】输入jmeter即可启动jmeter" class="headerlink" title="安装完成后【终端】输入jmeter即可启动jmeter"></a>安装完成后【终端】输入jmeter即可启动jmeter</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/e1d9756775cc36c659b7/640-2.jpeg" alt="avatar"><br><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/5374749dd3bdd2564732/640-3.jpeg" alt="avatar"></p>
+<h3 id="默认英文的，如果想转换为中文-可选择Options-gt-Choose-Language-gt-Chiness-Simplified"><a href="#默认英文的，如果想转换为中文-可选择Options-gt-Choose-Language-gt-Chiness-Simplified" class="headerlink" title="默认英文的，如果想转换为中文: 可选择Options-&gt;Choose Language-&gt;Chiness(Simplified)"></a>默认英文的，如果想转换为中文: 可选择Options-&gt;Choose Language-&gt;Chiness(Simplified)</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/6a422ff4367fb8efaaff/640-4.jpeg" alt="avatar"></p>
+<h2 id="安装中可能遇到的错误"><a href="#安装中可能遇到的错误" class="headerlink" title="安装中可能遇到的错误"></a>安装中可能遇到的错误</h2><p>在执行jmeter启动的时候，可能会遇到下面截图中的错误:<br><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/242cc6b171abf81c1699/640-5.jpeg" alt="avatar"> 我们可以看到最后一行出现了一个null的错误，此时我们就需要查看下启动的日志，确定问题的原因，在当前启动目录下有jmeter.log日志，我们在【终端】输入cat jmeter.log查看日志内容：<br><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/ad7975e42eacb3176211/640-6.jpeg" alt="avatar"> 此时我们只要在【终端】执行：jmeter -Djava.awt.headless=false即可(添加了虚拟机参数:-Djava.awt.headless=false)</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wkong0618.github.io/2020/04/04/java1-8%E4%B9%8B%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="wkong">
+      <meta itemprop="description" content="愿你生命中有更多的云翳来造成一个美丽的黄昏">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WKong 博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/04/java1-8%E4%B9%8B%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4/" class="post-title-link" itemprop="url">java1.8之日期时间</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-04-04 21:16:01 / 修改时间：21:33:42" itemprop="dateCreated datePublished" datetime="2020-04-04T21:16:01+08:00">2020-04-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/04/04/java1-8%E4%B9%8B%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/04/java1-8%E4%B9%8B%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>6.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>6 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>java1.8之前使用的日期java.util.Date和java.util.Calendar类都是可变的，DateFormat方法也是线程不安全(不能以单例模式创建格式器实例)，导致很多开发人员使用第三方的日期库，如Joda-Time。
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/04/04/java1-8%E4%B9%8B%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wkong0618.github.io/2020/04/04/java1-8%E4%B9%8BOptional/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="wkong">
+      <meta itemprop="description" content="愿你生命中有更多的云翳来造成一个美丽的黄昏">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WKong 博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/04/java1-8%E4%B9%8BOptional/" class="post-title-link" itemprop="url">java1.8之Optional</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-04-04 19:43:09 / 修改时间：21:42:48" itemprop="dateCreated datePublished" datetime="2020-04-04T19:43:09+08:00">2020-04-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/04/04/java1-8%E4%B9%8BOptional/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/04/java1-8%E4%B9%8BOptional/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>java 1.8引入java.util.Optional<T>类可以更优雅的替代空值判断,减少代码中的空指针异常。可以当作一个特殊的集合数据，至多包含一个元素。
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/04/04/java1-8%E4%B9%8BOptional/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://wkong0618.github.io/2019/12/24/java-try-with-resource/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -233,7 +550,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-26 00:58:24" itemprop="dateModified" datetime="2019-12-26T00:58:24+08:00">2019-12-26</time>
+                <time title="修改时间：2020-04-04 19:41:20" itemprop="dateModified" datetime="2020-04-04T19:41:20+08:00">2020-04-04</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -241,8 +558,8 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%90%8E%E7%AB%AF/" itemprop="url" rel="index">
-                    <span itemprop="name">后端</span>
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
                   </a>
                 </span>
             </span>
@@ -478,20 +795,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -524,7 +841,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -534,13 +851,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">7k</span>
+    <span title="站点总字数">16k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">7 分钟</span>
+    <span title="站点阅读时长">15 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
   </div>

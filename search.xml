@@ -1,6 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Mac安装Jmeter</title>
+    <url>/2020/04/04/Mac%E5%AE%89%E8%A3%85Jmeter/</url>
+    <content><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><a href="http://jmeter.apache.org/download_jmeter.cgi" target="_blank" rel="noopener">http://jmeter.apache.org/download_jmeter.cgi</a><br>上面链接是Jmeter下载页面,看到最新版支持是从java8开始，当前系统安装了java8，我们不直接下载进行安装,我们可以使用mac的软件包安装工具Homebrew(<a href="https://brew.sh/index_zh-cn)进行安装。" target="_blank" rel="noopener">https://brew.sh/index_zh-cn)进行安装。</a></p>
+<h3 id="在【终端】输入brew-search-jmeter可以搜索当前是否已经安装jmeter"><a href="#在【终端】输入brew-search-jmeter可以搜索当前是否已经安装jmeter" class="headerlink" title="在【终端】输入brew search jmeter可以搜索当前是否已经安装jmeter"></a>在【终端】输入brew search jmeter可以搜索当前是否已经安装jmeter</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/35d27a24707ef1235f5a/640.png" alt="avatar"></p>
+<h3 id="在【终端】输入brew-info-jmeter-可查看具体的包信息，当前是否已安装等"><a href="#在【终端】输入brew-info-jmeter-可查看具体的包信息，当前是否已安装等" class="headerlink" title="在【终端】输入brew info jmeter 可查看具体的包信息，当前是否已安装等"></a>在【终端】输入brew info jmeter 可查看具体的包信息，当前是否已安装等</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/8c79e21b8e38a6cfcd97/640.jpeg" alt="avatar"></p>
+<h3 id="在【终端】输入brew-install-jmeter-回车进行安装，耗时会比较长一些-当前已经下载过"><a href="#在【终端】输入brew-install-jmeter-回车进行安装，耗时会比较长一些-当前已经下载过" class="headerlink" title="在【终端】输入brew install  jmeter 回车进行安装，耗时会比较长一些(当前已经下载过)"></a>在【终端】输入brew install  jmeter 回车进行安装，耗时会比较长一些(当前已经下载过)</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/1a60167f5d85609e8bc8/640-1.jpeg" alt="avatar"></p>
+<h3 id="此时已经安装完成，【终端】输入brew-search-jmeter，我们会看到已经安装完毕"><a href="#此时已经安装完成，【终端】输入brew-search-jmeter，我们会看到已经安装完毕" class="headerlink" title="此时已经安装完成，【终端】输入brew search jmeter，我们会看到已经安装完毕"></a>此时已经安装完成，【终端】输入brew search jmeter，我们会看到已经安装完毕</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/7fcffcad93eb8bd50bd8/640.png" alt="avatar"></p>
+<h3 id="安装完成后【终端】输入jmeter即可启动jmeter"><a href="#安装完成后【终端】输入jmeter即可启动jmeter" class="headerlink" title="安装完成后【终端】输入jmeter即可启动jmeter"></a>安装完成后【终端】输入jmeter即可启动jmeter</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/e1d9756775cc36c659b7/640-2.jpeg" alt="avatar"><br><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/5374749dd3bdd2564732/640-3.jpeg" alt="avatar"></p>
+<h3 id="默认英文的，如果想转换为中文-可选择Options-gt-Choose-Language-gt-Chiness-Simplified"><a href="#默认英文的，如果想转换为中文-可选择Options-gt-Choose-Language-gt-Chiness-Simplified" class="headerlink" title="默认英文的，如果想转换为中文: 可选择Options-&gt;Choose Language-&gt;Chiness(Simplified)"></a>默认英文的，如果想转换为中文: 可选择Options-&gt;Choose Language-&gt;Chiness(Simplified)</h3><p><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/6a422ff4367fb8efaaff/640-4.jpeg" alt="avatar"></p>
+<h2 id="安装中可能遇到的错误"><a href="#安装中可能遇到的错误" class="headerlink" title="安装中可能遇到的错误"></a>安装中可能遇到的错误</h2><p>在执行jmeter启动的时候，可能会遇到下面截图中的错误:<br><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/242cc6b171abf81c1699/640-5.jpeg" alt="avatar"> 我们可以看到最后一行出现了一个null的错误，此时我们就需要查看下启动的日志，确定问题的原因，在当前启动目录下有jmeter.log日志，我们在【终端】输入cat jmeter.log查看日志内容：<br><img src="http://lc-BqgFjTKi.cn-n1.lcfile.com/ad7975e42eacb3176211/640-6.jpeg" alt="avatar"> 此时我们只要在【终端】执行：jmeter -Djava.awt.headless=false即可(添加了虚拟机参数:-Djava.awt.headless=false)</p>
+]]></content>
+      <categories>
+        <category>jmeter</category>
+      </categories>
+      <tags>
+        <tag>jmeter</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>java1.8之日期时间</title>
+    <url>/2020/04/04/java1-8%E4%B9%8B%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>java1.8之前使用的日期java.util.Date和java.util.Calendar类都是可变的，DateFormat方法也是线程不安全(不能以单例模式创建格式器实例)，导致很多开发人员使用第三方的日期库，如Joda-Time。<a id="more"></a>因此，Oracle决定在原生API上提供更好的日期时间支持，在java1.8的java.time包中整合了很多Joda-Time的特性，并且这些类都是不可变和线程安全的。</p>
+<h2 id="日期使用"><a href="#日期使用" class="headerlink" title="日期使用"></a>日期使用</h2><h3 id="LocalDate"><a href="#LocalDate" class="headerlink" title="LocalDate"></a>LocalDate</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">LocalDate localDate = LocalDate.now();</span><br><span class="line">System.out.println(<span class="string">"获取当前日期:"</span> + localDate);</span><br><span class="line"><span class="keyword">int</span> year = localDate.getYear();</span><br><span class="line"><span class="keyword">int</span> month = localDate.getMonthValue();</span><br><span class="line"><span class="keyword">int</span> day = localDate.getDayOfMonth();</span><br><span class="line">System.out.printf(<span class="string">"当前日期分别获取的年月日,年:%d, 月份:%d, 日:%d %n"</span>, year, month, day);</span><br><span class="line">System.out.println(<span class="string">"获取当月天数:"</span> + localDate.lengthOfMonth());</span><br><span class="line">System.out.println(<span class="string">"获取当天星期几:"</span> + localDate.getDayOfWeek());</span><br><span class="line">System.out.println(<span class="string">"获取当月的第几天:"</span> + localDate.getDayOfMonth());</span><br><span class="line">System.out.println(<span class="string">"获取明天的日期:"</span> + localDate.plusDays(<span class="number">1</span>));</span><br><span class="line">System.out.println(<span class="string">"获取昨天的日期:"</span> + localDate.minusDays(<span class="number">1</span>));</span><br><span class="line">System.out.println(<span class="string">"获取上月当天日期:"</span> + localDate.minusMonths(<span class="number">1</span>));</span><br><span class="line">System.out.println(<span class="string">"获取当月第一天:"</span> + localDate.with(firstDayOfMonth()));</span><br><span class="line">System.out.println(<span class="string">"获取当月最后一天:"</span> + localDate.with(lastDayOfMonth()));</span><br><span class="line">System.out.println(<span class="string">"是否闰年:"</span> + localDate.isLeapYear());</span><br><span class="line">LocalDate localDate1 = LocalDate.of(<span class="number">2019</span>, <span class="number">12</span>, <span class="number">31</span>);</span><br><span class="line">System.out.println(<span class="string">"获取指定日期:"</span> + localDate1);</span><br><span class="line">System.out.println(<span class="string">"获取上月的指定日期:"</span> + localDate1.minusMonths(<span class="number">1</span>));</span><br><span class="line">System.out.println(<span class="string">"获取日期相差天数:"</span> + localDate.until(localDate1, ChronoUnit.DAYS));</span><br><span class="line">System.out.println(<span class="string">"当前日期是否在指定日期后:"</span> + localDate.isAfter(localDate1));</span><br><span class="line">System.out.println(<span class="string">"当前日期是否等于指定日期:"</span> + localDate.isEqual(localDate1));</span><br><span class="line">System.out.println(<span class="string">"当前日期是否在指定日期前:"</span> + localDate.isBefore(localDate1));</span><br><span class="line">LocalDate localDate2 = LocalDate.parse(<span class="string">"2019-12-17"</span>);</span><br><span class="line">System.out.println(<span class="string">"解析字符串日期:"</span> + localDate2);</span><br></pre></td></tr></table></figure>
+
+<p>输出为：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">获取当前日期:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">04</span></span><br><span class="line">当前日期分别获取的年月日,年:<span class="number">2019</span>, 月份:<span class="number">12</span>, 日:<span class="number">4</span></span><br><span class="line">获取当月天数:<span class="number">31</span></span><br><span class="line">获取当天星期几:WEDNESDAY</span><br><span class="line">获取当月的第几天:<span class="number">4</span></span><br><span class="line">获取明天的日期:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">05</span></span><br><span class="line">获取昨天的日期:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">03</span></span><br><span class="line">获取上月当天日期:<span class="number">2019</span>-<span class="number">11</span>-<span class="number">04</span></span><br><span class="line">获取当月第一天:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">01</span></span><br><span class="line">获取当月最后一天:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">31</span></span><br><span class="line">是否闰年:<span class="keyword">false</span></span><br><span class="line">获取指定日期:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">31</span></span><br><span class="line">获取上月的指定日期:<span class="number">2019</span>-<span class="number">11</span>-<span class="number">30</span></span><br><span class="line">获取日期相差天数:<span class="number">27</span></span><br><span class="line">当前日期是否在指定日期后:<span class="keyword">false</span></span><br><span class="line">当前日期是否等于指定日期:<span class="keyword">false</span></span><br><span class="line">当前日期是否在指定日期前:<span class="keyword">true</span></span><br><span class="line">解析字符串日期:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">17</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="LocalTime"><a href="#LocalTime" class="headerlink" title="LocalTime"></a>LocalTime</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">LocalDateTime localDateTime = LocalDateTime.now();</span><br><span class="line">System.out.println(<span class="string">"获取当前日期时间:"</span> + localDateTime);</span><br><span class="line">System.out.println(<span class="string">"获取不带毫秒的当前日期时间:"</span> + localDateTime.withNano(<span class="number">0</span>));</span><br><span class="line">System.out.println(<span class="string">"当前日期时间提取日期:"</span> + localDateTime.toLocalDate());</span><br><span class="line">System.out.println(<span class="string">"当前日期时间提取时间:"</span> + localDateTime.toLocalTime());</span><br><span class="line">LocalDateTime localDateTime1 = LocalDateTime.of(localDate, localTime);</span><br><span class="line">System.out.println(<span class="string">"日期和时间的合并:"</span> + localDateTime1);</span><br><span class="line">LocalDateTime localDateTime2 = LocalDateTime.of(<span class="number">2019</span>, <span class="number">11</span>, <span class="number">12</span>, <span class="number">13</span>,<span class="number">14</span>,<span class="number">15</span>);</span><br><span class="line">System.out.println(<span class="string">"获取指定的日期时间:"</span> + localDateTime2);</span><br><span class="line">DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(<span class="string">"yyyyMMddHHmmss"</span>);</span><br><span class="line">System.out.println(<span class="string">"格式化为yyyyMMdd的日期时间:"</span> + localDateTime2.format(dateTimeFormatter));</span><br><span class="line"><span class="comment">//2019-11-13T13:14:15</span></span><br><span class="line">System.out.println(<span class="string">"明天的当前日期时间:"</span> + localDateTime2.plusDays(<span class="number">1</span>));</span><br></pre></td></tr></table></figure>
+
+<p>输出为：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">获取当前日期时间:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">04</span>T01:<span class="number">07</span>:<span class="number">21.244</span></span><br><span class="line">获取不带毫秒的当前日期时间:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">04</span>T01:<span class="number">07</span>:<span class="number">21</span></span><br><span class="line">当前日期时间提取日期:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">04</span></span><br><span class="line">当前日期时间提取时间:<span class="number">01</span>:<span class="number">07</span>:<span class="number">21.244</span></span><br><span class="line">日期和时间的合并:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">04</span>T01:<span class="number">07</span>:<span class="number">21.243</span></span><br><span class="line">获取指定的日期时间:<span class="number">2019</span>-<span class="number">11</span>-<span class="number">12</span>T13:<span class="number">14</span>:<span class="number">15</span></span><br><span class="line">格式化为yyyyMMdd的日期时间:<span class="number">20191112131415</span></span><br><span class="line">明天的当前日期时间:<span class="number">2019</span>-<span class="number">11</span>-<span class="number">13</span>T13:<span class="number">14</span>:<span class="number">15</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Instant的使用"><a href="#Instant的使用" class="headerlink" title="Instant的使用"></a>Instant的使用</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">"获取当前时间戳:"</span> + Instant.now());</span><br></pre></td></tr></table></figure>
+
+<p>输出为：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">获取当前时间戳:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">03</span>T17:<span class="number">07</span>:<span class="number">21.246</span>Z</span><br></pre></td></tr></table></figure>
+
+<h3 id="Duration"><a href="#Duration" class="headerlink" title="Duration"></a>Duration</h3><p>Duration类主要用于以秒和纳秒衡量时间的长短, 不能LocalDate作为参数，否则会报错.</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Duration duration = Duration.between(localDateTime1, localDateTime1.plusSeconds(<span class="number">1</span>));</span><br><span class="line">Duration duration1 = Duration.between(localTime1, localTime1.plusSeconds(<span class="number">1</span>));</span><br><span class="line">System.out.println(<span class="string">"两个localDateTime相差的秒数:"</span> + duration.getSeconds());</span><br><span class="line">System.out.println(<span class="string">"两个localTime相差的秒数:"</span> + duration1.getSeconds());</span><br></pre></td></tr></table></figure>
+
+<p>输出为：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">两个localDateTime相差的秒数:<span class="number">1</span></span><br><span class="line">两个localTime相差的秒数:<span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Period"><a href="#Period" class="headerlink" title="Period"></a>Period</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Period period = Period.between(LocalDate.of(<span class="number">2019</span>, <span class="number">3</span>, <span class="number">8</span>),</span><br><span class="line">LocalDate.of(<span class="number">2019</span>, <span class="number">3</span>, <span class="number">18</span>));</span><br><span class="line">System.out.println(<span class="string">"两个LocalDate相差的天数:"</span> + period.getDays());</span><br></pre></td></tr></table></figure>
+
+<p>输出为：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">两个LocalDate相差的天数:<span class="number">10</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="TemporalAdjuster"><a href="#TemporalAdjuster" class="headerlink" title="TemporalAdjuster"></a>TemporalAdjuster</h3><p>对日期时间更复杂的操作，静态工厂类方法TemporalAdjusters提供了很多对日期的操作.<br>TemporalAdjuster接口(函数式接口)：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@FunctionalInterface</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">TemporalAdjuster</span> </span>&#123;</span><br><span class="line">    <span class="function">Temporal <span class="title">adjustInto</span><span class="params">(Temporal var1)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>使用：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//使用重载的with方法</span></span><br><span class="line">LocalDate localDate3 = localDate.with(nextOrSame(DayOfWeek.SUNDAY));</span><br><span class="line">System.out.println(<span class="string">"第一个符合指定星期几的日期:"</span> + localDate3);</span><br><span class="line"><span class="comment">//自定义TemporalAdjuster,简单的例子:下一年的第一天,以下使用了三种方式</span></span><br><span class="line"><span class="comment">//1.使用Lambda表达式定义TemporalAdjuster对象，使用TemporalAdjusters类的静态工厂方法ofDateAdjuster</span></span><br><span class="line">TemporalAdjuster nextDate = TemporalAdjusters.ofDateAdjuster(temporal -&gt; temporal.plusDays(<span class="number">1</span>));</span><br><span class="line">LocalDate adjustDate = localDate.with(nextDate);</span><br><span class="line">System.out.println(<span class="string">"Lambda表达式定义TemporalAdjuster对象方式:下一年的第一天:"</span> + adjustDate);</span><br><span class="line"><span class="comment">//2.Lambda表达式的方式</span></span><br><span class="line">adjustDate = localDate.with(temporal -&gt; temporal.plus(<span class="number">1</span>, ChronoUnit.DAYS));</span><br><span class="line">System.out.println(<span class="string">"Lambda表达式方式:下一年的第一天:"</span> + adjustDate);</span><br><span class="line"><span class="comment">//3.实现TemporalAdjuster接口</span></span><br><span class="line">adjustDate =localDate.with(<span class="keyword">new</span> NextDay());</span><br><span class="line">System.out.println(<span class="string">"实现TemporalAdjuster接口方式:"</span> + adjustDate);</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">第一个符合指定星期几的日期:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">08</span></span><br><span class="line">Lambda表达式定义TemporalAdjuster对象方式:下一年的第一天:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">05</span></span><br><span class="line">Lambda表达式方式:下一年的第一天:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">05</span></span><br><span class="line">实现TemporalAdjuster接口方式:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">05</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Date和LocalDate，LocalDateTime，的相互转换"><a href="#Date和LocalDate，LocalDateTime，的相互转换" class="headerlink" title="Date和LocalDate，LocalDateTime，的相互转换"></a>Date和LocalDate，LocalDateTime，的相互转换</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Date和LocalDate，LocalDateTime，的相互转换</span></span><br><span class="line">Date date = <span class="keyword">new</span> Date();</span><br><span class="line">ZoneId defaultZoneId = ZoneId.systemDefault();</span><br><span class="line">Instant instant = date.toInstant();</span><br><span class="line">LocalDate localDate4 = instant.atZone(defaultZoneId).toLocalDate();</span><br><span class="line">System.out.println(<span class="string">"Date-&gt;LocalDate:"</span> + localDate4);</span><br><span class="line">LocalDateTime localDateTime3 = instant.atZone(defaultZoneId).toLocalDateTime();</span><br><span class="line">System.out.println(<span class="string">"Date-&gt;localDateTime:"</span> + localDateTime3);</span><br><span class="line">LocalDate localDate5 = LocalDate.of(<span class="number">2019</span>, <span class="number">12</span>, <span class="number">2</span>);</span><br><span class="line">instant  = localDate5.atStartOfDay(defaultZoneId).toInstant();</span><br><span class="line">System.out.println(<span class="string">"LocalDate-&gt;Date:"</span> + Date.from(instant));</span><br><span class="line">LocalDateTime localDateTime4 = LocalDateTime.of(<span class="number">2019</span>,<span class="number">12</span>,<span class="number">03</span>,<span class="number">11</span>,<span class="number">24</span>,<span class="number">23</span>);</span><br><span class="line">instant  = localDateTime4.atZone(defaultZoneId).toInstant();</span><br><span class="line">System.out.println(<span class="string">"LocalDateTime-&gt;Date:"</span> + Date.from(instant));</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Date-&gt;LocalDate:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">04</span></span><br><span class="line">Date-&gt;localDateTime:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">04</span>T01:<span class="number">07</span>:<span class="number">21.252</span></span><br><span class="line">LocalDate-&gt;Date:Mon Dec <span class="number">02</span> <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> CST <span class="number">2019</span></span><br><span class="line">LocalDateTime-&gt;Date:Tue Dec <span class="number">03</span> <span class="number">11</span>:<span class="number">24</span>:<span class="number">23</span> CST <span class="number">2019</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="计算时间差"><a href="#计算时间差" class="headerlink" title="计算时间差"></a>计算时间差</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Instant startInstant = Instant.now();</span><br><span class="line">Thread.sleep(<span class="number">10L</span>);</span><br><span class="line">Instant endInstant = Instant.now();</span><br><span class="line">System.out.println(<span class="string">"计算时间差:"</span> + startInstant.until(endInstant, ChronoUnit.MILLIS) + <span class="string">"ms"</span>);</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">计算时间差:<span class="number">11</span>ms</span><br></pre></td></tr></table></figure>
+
+<h3 id="时间戳和LocalDateTime的相互转换"><a href="#时间戳和LocalDateTime的相互转换" class="headerlink" title="时间戳和LocalDateTime的相互转换"></a>时间戳和LocalDateTime的相互转换</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">LocalDateTime localDateTime5 = LocalDateTime.now();</span><br><span class="line"><span class="keyword">long</span> timestamp = localDateTime5.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();</span><br><span class="line">System.out.println(<span class="string">"localDateTime-&gt;timestamp:"</span> + timestamp);</span><br><span class="line">Instant instant1 = Instant.ofEpochMilli(timestamp);</span><br><span class="line">LocalDateTime localDateTime6 = LocalDateTime.ofInstant(instant1, ZoneId.systemDefault());</span><br><span class="line">System.out.println(<span class="string">"timestamp-&gt;localDateTime:"</span> + localDateTime6);</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">localDateTime-&gt;timestamp:<span class="number">1575392841270</span></span><br><span class="line">timestamp-&gt;localDateTime:<span class="number">2019</span>-<span class="number">12</span>-<span class="number">04</span>T01:<span class="number">07</span>:<span class="number">21.270</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Monthday-和-YearMonth"><a href="#Monthday-和-YearMonth" class="headerlink" title="Monthday 和 YearMonth"></a>Monthday 和 YearMonth</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">MonthDay monthDay = MonthDay.now();</span><br><span class="line">YearMonth yearMonth = YearMonth.now();</span><br><span class="line">System.out.println(<span class="string">"MonthDay:"</span> + monthDay);</span><br><span class="line">System.out.println(<span class="string">"YearMonth:"</span> + yearMonth);</span><br><span class="line">LocalDateTime localDateTime7 = LocalDateTime.now();</span><br><span class="line">YearMonth yearMonth1 = YearMonth.from(localDateTime7);</span><br><span class="line">System.out.println(<span class="string">"LocalDateTime-&gt;YearMonth:"</span> + yearMonth1);</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">MonthDay:--<span class="number">12</span>-<span class="number">04</span></span><br><span class="line">YearMonth:<span class="number">2019</span>-<span class="number">12</span></span><br><span class="line">LocalDateTime-&gt;YearMonth:<span class="number">2019</span>-<span class="number">12</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>java1.8之Optional</title>
+    <url>/2020/04/04/java1-8%E4%B9%8BOptional/</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>java 1.8引入java.util.Optional<T>类可以更优雅的替代空值判断,减少代码中的空指针异常。可以当作一个特殊的集合数据，至多包含一个元素。<a id="more"></a>Optional可以是包含T类型对象或者空的Optional对象，设计初衷仅仅是支持能返回Optional对象的语法，所以引入该语法并非是完全消除null引用。</p>
+<h2 id="类的方法"><a href="#类的方法" class="headerlink" title="类的方法"></a>类的方法</h2><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>empty</td>
+<td>返回空的Optional实例</td>
+</tr>
+<tr>
+<td>of</td>
+<td>创建Optional，参数不能为null</td>
+</tr>
+<tr>
+<td>ofNullable</td>
+<td>创建Optional，参数可以为null</td>
+</tr>
+<tr>
+<td>get</td>
+<td>存在值，Optional封装返回，不存在，会抛出NoSuchElementException异常</td>
+</tr>
+<tr>
+<td>isPresent</td>
+<td>判断值是否存在</td>
+</tr>
+<tr>
+<td>ifPresent</td>
+<td>值存在，执行该值方法调用，否则不调用</td>
+</tr>
+<tr>
+<td>filter</td>
+<td>判断是否满足Predicate，满足返回该值的Optional对象，否则返回空的Optional对象</td>
+</tr>
+<tr>
+<td>map</td>
+<td>值存在，执行提供的函数调用</td>
+</tr>
+<tr>
+<td>flatMap</td>
+<td>与map功能相似，区别是map可以返回任何类型的返回值T，flatMap只能返回Optional类型</td>
+</tr>
+<tr>
+<td>orElse</td>
+<td>值存在返回该值，不存在返回默认值，不管Optional有没有值都会调用</td>
+</tr>
+<tr>
+<td>orElseGet</td>
+<td>orElse方法的延迟调用版，只有在Optional对象不含值的时候才会调用</td>
+</tr>
+<tr>
+<td>orElseThrow</td>
+<td>值不存在抛出定制类型异常</td>
+</tr>
+</tbody></table>
+<h2 id="Optional的使用"><a href="#Optional的使用" class="headerlink" title="Optional的使用"></a>Optional的使用</h2><h3 id="1-空值的判断"><a href="#1-空值的判断" class="headerlink" title="1.空值的判断"></a>1.空值的判断</h3><p>如下代码获取程序名方法使用Optional替换null引用判断：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getProgramName</span><span class="params">(Program p)</span></span>&#123;</span><br><span class="line">    Optional&lt;Program&gt; program = Optional.ofNullable(p);</span><br><span class="line">    <span class="keyword">if</span>(!program.isPresent())&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"UnKnow"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> p.getName();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>获取程序名的时候，利用isPresent()方法判断是否存在来替代null引用空判断，并未更简洁，不建议这样写，我们进一步使用Optional进行改写，代码如下：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getProgramName</span><span class="params">(Program p)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> Optional.ofNullable(p)</span><br><span class="line">            .map(item-&gt; item.getName())</span><br><span class="line">            .orElse(<span class="string">"UnKnow"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-过滤值和链式调用"><a href="#2-过滤值和链式调用" class="headerlink" title="2.过滤值和链式调用"></a>2.过滤值和链式调用</h3><p>如果我们想查询某一产品(idea产品)的程序名，如下代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getProgramName</span><span class="params">(Product product)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> Optional.ofNullable(product)</span><br><span class="line">            .filter(item-&gt;item.getName().equals(<span class="string">"idea"</span>))</span><br><span class="line">            .map(Product::getProject)</span><br><span class="line">            .map(Project::getProgram)</span><br><span class="line">            .map(Program::getName).orElse(<span class="string">"unKnow"</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>利用Optional进行处理会变的很清晰，可读性更强。如果进行null引用的判断，会嵌套很多的if条件语句或者每次判空进行返回，都会显得有些复杂，不利于后期维护。<br>当然还有其它场景可以进行null引用优化，另外需要注意的是Optional并未实现Serializable接口，因此不能作为类的字段，否则在使用有序列化要求的库或者框架会出现问题。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h3 id="1-使用Optional会有助于我们设计更好的API，有效的防止代码中出现的空指针异常。"><a href="#1-使用Optional会有助于我们设计更好的API，有效的防止代码中出现的空指针异常。" class="headerlink" title="1.使用Optional会有助于我们设计更好的API，有效的防止代码中出现的空指针异常。"></a>1.使用Optional会有助于我们设计更好的API，有效的防止代码中出现的空指针异常。</h3><h3 id="2-我们在使用的时候要注意Optional目的只是能返回Optional对象的语法"><a href="#2-我们在使用的时候要注意Optional目的只是能返回Optional对象的语法" class="headerlink" title="2.我们在使用的时候要注意Optional目的只是能返回Optional对象的语法"></a>2.我们在使用的时候要注意Optional目的只是能返回Optional对象的语法</h3><blockquote>
+<p>参考书籍：《java8实战》</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>java try-with-resource</title>
     <url>/2019/12/24/java-try-with-resource/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Java中外部资源无法使用JVM垃圾回收机制回收,例如数据库连接、网络连接、文件等，因此使用完这些资源需要手动关闭。</p>
@@ -50,7 +214,7 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>后端</category>
+        <category>java</category>
       </categories>
       <tags>
         <tag>java</tag>
